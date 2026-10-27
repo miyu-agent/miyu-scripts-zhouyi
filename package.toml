@@ -1,0 +1,6 @@
+[package]
+version = "0.1.0"
+name = { en = "I Ching", zh = "周易卜卦" }
+summary = { en = "Cast a hexagram with three coins; returns the primary and the changed hexagram", zh = "三枚硬币起卦，交回本卦和变卦" }
+author = "SHORiN-KiWATA"
+icon = "star"
