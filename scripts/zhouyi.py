@@ -81,6 +81,8 @@ def main():
         args = json.load(sys.stdin)
     except json.JSONDecodeError as exc:
         fail(f"参数不是 JSON：{exc}")
+    if not isinstance(args, dict):
+        fail("参数要是一个 JSON 对象")
     question = str(args.get("question") or "").strip()
 
     rng = secrets.SystemRandom()
